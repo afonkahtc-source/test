@@ -21,6 +21,9 @@
         Отсаётся Music, которое переводится в нижний регистр и получается
         name ="music". В текущем контекте music=setMusic -->
         <property  name="music" ref="musicBeanClassical" />
+
+        <property name="name" value="Some name"/>
+        <property name="volume" value="50"/>
     </bean>
 
 </beans>
