@@ -17,15 +17,26 @@
           class="org.example.RockMusic">
     </bean>
 
+    <bean id="musicBeanElectronicPop"
+          class="org.example.ElectronicPopMusic">
+    </bean>
+
     <bean id="musicPlayer"
           class="org.example.MusicPlayer">
         <!-- Ищет setMusic. Spring знает set, поэтому отсекает его.
         Отсаётся Music, которое переводится в нижний регистр и получается
         name ="music". В текущем контекте music=setMusic -->
-        <property  name="music" ref="musicBeanClassical" />
+        <!-- <property  name="music" ref="musicBeanClassical" /> -->
+        <property  name="musicList">
+            <list>
+                <ref bean="musicBeanClassical"/>
+                <ref bean="musicBeanRock"/>
+                <ref bean="musicBeanElectronicPop"/>
+            </list>
+        </property>
 
-        <property name="name" value="${musicPlaer.name}"/>
-        <property name="volume" value="${musicPlaer.volume}"/>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
 
 </beans>
