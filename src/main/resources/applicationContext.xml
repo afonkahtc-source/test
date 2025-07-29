@@ -17,7 +17,10 @@
 
     <bean id="musicPlayer"
           class="org.example.MusicPlayer">
-        <constructor-arg ref="musicBeanRock"/>
+        <!-- Ищет setMusic. Spring знает set, поэтому отсекает его.
+        Отсаётся Music, которое переводится в нижний регистр и получается
+        name ="music". В текущем контекте music=setMusic -->
+        <property  name="music" ref="musicBeanClassical" />
     </bean>
 
 </beans>
