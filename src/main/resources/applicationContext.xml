@@ -7,41 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:musicPlayer.properties"/>
-
-    <bean id="musicBeanClassical"
-          class="org.example.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic">
-    </bean>
-
-    <bean id="musicBeanRock"
-          class="org.example.RockMusic">
-    </bean>
-
-    <bean id="musicBeanElectronicPop"
-          class="org.example.ElectronicPopMusic">
-    </bean>
-
-    <bean id="musicPlayer"
-          class="org.example.MusicPlayer"
-    scope="prototype"><!--Для всех объектов разные области памяти-->
-
-        <!-- Ищет setMusic. Spring знает set, поэтому отсекает его.
-        Отсаётся Music, которое переводится в нижний регистр и получается
-        name ="music". В текущем контекте music=setMusic -->
-        <!-- <property  name="music" ref="musicBeanClassical" /> -->
-        <property  name="musicList">
-            <list>
-                <ref bean="musicBeanClassical"/>
-                <ref bean="musicBeanRock"/>
-                <ref bean="musicBeanElectronicPop"/>
-            </list>
-        </property>
-
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+    <context:component-scan base-package="org.example"/>
 
 </beans>
