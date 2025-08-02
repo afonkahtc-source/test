@@ -1,4 +1,4 @@
-package org.lesson.l01_task;
+package lesson.l01_task;
 
 public class Pet {
     private String name;
