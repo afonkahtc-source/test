@@ -1,4 +1,4 @@
-package lesson.l07;
+package lesson.l07_BeanScope;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

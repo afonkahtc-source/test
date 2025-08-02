@@ -1,4 +1,4 @@
-package lesson.l08;
+package lesson.l09_AnnotationComponent;
 
 public interface Music {
     String getSong();

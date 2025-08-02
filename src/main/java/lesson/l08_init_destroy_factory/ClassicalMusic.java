@@ -1,4 +1,4 @@
-package lesson.l08;
+package lesson.l08_init_destroy_factory;
 
 public class ClassicalMusic implements Music {
     private ClassicalMusic() {} //невозможно создать объект с помощью new

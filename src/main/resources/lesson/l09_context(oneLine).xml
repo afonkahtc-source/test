@@ -4,11 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="musicBean"
-          class="lesson.l08_init_destroy_factory.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic">
-    </bean>
+<!--    Сканирование всего package на наличие Component-->
+    <context:component-scan base-package="lesson.l09_AnnotationComponent"/>
 
 </beans>

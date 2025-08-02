@@ -1,4 +1,4 @@
-package lesson.l07;
+package lesson.l08_init_destroy_factory;
 
 public class RockMusic implements Music {
     @Override

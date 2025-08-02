@@ -7,11 +7,11 @@
     <context:property-placeholder location="classpath:lesson/l06_musicPlayer.properties"/>
 
     <bean id="musicBean"
-          class="lesson.l07.RockMusic">
+          class="lesson.l07_BeanScope.RockMusic">
     </bean>
 
     <bean id="musicPlayer"
-          class="lesson.l07.MusicPlayer"
+          class="lesson.l07_BeanScope.MusicPlayer"
           scope="prototype">
         <property name="music" ref="musicBean"/>
 

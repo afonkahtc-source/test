@@ -1,4 +1,4 @@
-package lesson.l08;
+package lesson.l07_BeanScope;
 
 public class RockMusic implements Music {
     @Override
