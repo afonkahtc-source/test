@@ -9,4 +9,6 @@
 
     <context:component-scan base-package="org.example"/>
 
+    <bean id="myPet" class="org.lesson.l01_task.Pet"/>
+
 </beans>
