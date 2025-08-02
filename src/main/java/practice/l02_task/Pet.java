@@ -1,4 +1,4 @@
-package lesson.l01_task;
+package practice.l02_task;
 
 public class Pet {
     private String name;

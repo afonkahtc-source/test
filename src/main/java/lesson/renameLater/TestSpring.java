@@ -1,4 +1,4 @@
-package example;
+package lesson.renameLater;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

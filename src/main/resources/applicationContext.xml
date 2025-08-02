@@ -7,8 +7,12 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="example"/>
+    <context:component-scan base-package="lesson"/>
 
-    <bean id="myPet" class="lesson.l01_task.Pet"/>
+    <bean id="myPet" class="practice.l02_task.Pet"/>
+
+    <bean id="myPerson" class="practice.l02_task.Person">
+        <constructor-arg ref="myPet"/>
+    </bean>
 
 </beans>

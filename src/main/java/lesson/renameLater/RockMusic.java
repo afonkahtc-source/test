@@ -1,12 +1,11 @@
-package example;
+package lesson.renameLater;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class ClassicalMusic implements Music {
-
+public class RockMusic implements Music {
     @Override
     public String getSong() {
-        return "Hangarian Rhapsody";
+        return "Wind cries Mary";
     }
 }
