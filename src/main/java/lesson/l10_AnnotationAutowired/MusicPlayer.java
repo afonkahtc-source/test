@@ -1,4 +1,4 @@
-package lesson.renameLater;
+package lesson.l10_AnnotationAutowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,6 +15,6 @@ public class MusicPlayer {
     }
 
     public String playMusic() {
-        return "Playing: " + classicalMusic.getSong();
+        return "Playing: "+rockMusic.getSong();
     }
 }

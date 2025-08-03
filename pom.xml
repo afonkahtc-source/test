@@ -33,8 +33,26 @@
       <version>7.0.0-M7</version>
     </dependency>
 
+  <!--Начала использоваться только в l12_OtherAnnotations-->
+    <dependency>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+
+
   </dependencies>
   <build>
     <finalName>SpringApp1</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>9</source>
+          <target>9</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>

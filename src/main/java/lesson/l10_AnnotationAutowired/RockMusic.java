@@ -1,4 +1,4 @@
-package lesson.renameLater;
+package lesson.l10_AnnotationAutowired;
 
 import org.springframework.stereotype.Component;
 

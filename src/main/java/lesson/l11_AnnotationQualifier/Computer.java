@@ -1,4 +1,4 @@
-package lesson.renameLater;
+package lesson.l11_AnnotationQualifier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
