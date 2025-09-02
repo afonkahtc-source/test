@@ -16,5 +16,7 @@ public class TestSpring {
         System.out.println(musicPlayer.playMusic());
 
         context.close();
+
+        System.out.println("Имитация командной работы");
     }
 }
