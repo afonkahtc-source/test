@@ -18,5 +18,7 @@ public class TestSpring {
         context.close();
 
         System.out.println("Имитация командной работы");
+                
+        System.out.println("Добавлен коммит только со стороны репозитория");
     }
 }
